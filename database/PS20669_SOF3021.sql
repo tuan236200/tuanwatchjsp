@@ -1,4 +1,4 @@
-﻿-- Create Database
+﻿
 CREATE DATABASE tuanweb;
 USE tuanweb;
 
@@ -15,31 +15,31 @@ CREATE TABLE Accounts (
 
 -- Insert Data into Accounts
 INSERT INTO Accounts (Username, Password, Fullname, Email, Photo, Activated, Admin) VALUES
-                                                                                        ('TRINHTAI25', '123456', 'Trịnh Võ Đức Tài', 'taitvdps20669@.edu.vn', 'admin.png', 1, 1),
-                                                                                        ('HONGQUYEN30', '123456', 'Lê Hồng Quyên', 'quyentvdps20000@.edu.vn', 'admin.png', 1, 1),
-                                                                                        ('QUOCHUY19', '123456', 'Trịnh Võ Quốc Huy', 'huytvdps12345@.edu.vn', 'admin.png', 1, 1),
-                                                                                        ('TRUNGNGUYEN20', '123456', 'Lê Trung Nguyên', 'nguyentvdps34567@.edu.vn', 'admin.png', 1, 1),
-                                                                                        ('MINHTRI20', '123456', 'Trịnh Võ Đức Tài', 'tritvdps19999@.edu.vn', 'admin.png', 1, 1),
-                                                                                        ('HOANGPHUC20', '123456', 'Đinh Hoàng Phúc', 'phuctvdps19018@.edu.vn', 'admin.png', 1, 1),
-                                                                                        ('LAIBANG20', '123456', 'SGP Lai Bâng', 'laibangps98089@.edu.vn', 'admin.png', 1, 1),
-                                                                                        ('XUANBACH20', '123456', 'FL Xuân Bách', 'xuanbachps11980@.edu.vn', 'admin.png', 1, 1),
-                                                                                        ('ADC20', '123456', 'FL ADC', 'adcps09876@.edu.vn', 'admin.png', 1, 1),
-                                                                                        ('MARIS20', '123456', 'SGP MARIS', 'marisps12390@.edu.vn', 'admin.png', 1, 1),
-                                                                                        ('QUOCHUY20', '123456', 'FL Quốc Huy', 'quochuyps26761@.edu.vn', 'admin.png', 1, 1),
-                                                                                        ('DUCTAI20', '123456', 'FL Đức Tài', 'ductaips78791@.edu.vn', 'admin.png', 1, 1),
-                                                                                        ('HUULAM20', '123456', 'FL Hữu Lâm', 'huulamps13141@.edu.vn', 'admin.png', 1, 1),
-                                                                                        ('DIRUNG20', '123456', 'FL Đi Rừng', 'dirungps14642@.edu.vn', 'admin.png', 1, 1),
-                                                                                        ('NGUYENMAP20', '123456', 'FL Nguyên Mập', 'nguyenmapps23568@.edu.vn', 'admin.png', 1, 1),
-                                                                                        ('THACHDAU20', '123456', 'TDT Thách Đấu', 'thachdaups12467@.edu.vn', 'admin.png', 1, 1),
-                                                                                        ('HOANGTD20', '123456', 'TDT HoangTD', 'hoangtdps77812@.edu.vn', 'admin.png', 1, 1),
-                                                                                        ('ONGBACH20', '123456', 'TDT Ông Bạch', 'ongbachps12377@.edu.vn', 'admin.png', 1, 1),
-                                                                                        ('MARIN20', '123456', 'TDT Marin', 'marinps09123@.edu.vn', 'admin.png', 1, 1),
-                                                                                        ('CATIA20', '123456', 'TDT Catia', 'catiaps19090@.edu.vn', 'admin.png', 1, 1),
-                                                                                        ('USER01', '123456', 'Đinh Hoàng User', 'userps01111@.edu.vn', 'user.png', 1, 0),
-                                                                                        ('USER02', '123456', 'SGP User', 'userps02222@.edu.vn', 'user.png', 1, 0),
-                                                                                        ('USER03', '123456', 'Trịnh Võ User', 'userps03333@.edu.vn', 'user.png', 1, 0),
-                                                                                        ('USER04', '123456', 'Nguyễn Hoàng User', 'userps04444@.edu.vn', 'user.png', 1, 0),
-                                                                                        ('USER05', '123456', 'Nguyễn Hữu User', 'userps05555@.edu.vn', 'user.png', 1, 0);
+                                                                                        ('TRINHTAI25', '123456', 'Trịnh Võ Đức Tài', 'Phamtuan236200@gmail.com', 'admin.png', 1, 1),
+                                                                                        ('HONGQUYEN30', '123456', 'Lê Hồng Quyên', 'Phamtuan236200@gmail.com', 'admin.png', 1, 1),
+                                                                                        ('QUOCHUY19', '123456', 'Trịnh Võ Quốc Huy', 'Phamtuan236200@gmail.com', 'admin.png', 1, 1),
+                                                                                        ('TRUNGNGUYEN20', '123456', 'Lê Trung Nguyên', 'Phamtuan236200@gmail.com', 'admin.png', 1, 1),
+                                                                                        ('MINHTRI20', '123456', 'Trịnh Võ Đức Tài', 'Phamtuan236200@gmail.com', 'admin.png', 1, 1),
+                                                                                        ('HOANGPHUC20', '123456', 'Đinh Hoàng Phúc', 'Phamtuan236200@gmail.com', 'admin.png', 1, 1),
+                                                                                        ('LAIBANG20', '123456', 'SGP Lai Bâng', 'Phamtuan236200@gmail.com', 'admin.png', 1, 1),
+                                                                                        ('XUANBACH20', '123456', 'FL Xuân Bách', 'Phamtuan236200@gmail.com', 'admin.png', 1, 1),
+                                                                                        ('ADC20', '123456', 'FL ADC', 'Phamtuan236200@gmail.com', 'admin.png', 1, 1),
+                                                                                        ('MARIS20', '123456', 'SGP MARIS', 'Phamtuan236200@gmail.com', 'admin.png', 1, 1),
+                                                                                        ('QUOCHUY20', '123456', 'FL Quốc Huy', 'Phamtuan236200@gmail.com', 'admin.png', 1, 1),
+                                                                                        ('DUCTAI20', '123456', 'FL Đức Tài', 'Phamtuan236200@gmail.com', 'admin.png', 1, 1),
+                                                                                        ('HUULAM20', '123456', 'FL Hữu Lâm', 'Phamtuan236200@gmail.com', 'admin.png', 1, 1),
+                                                                                        ('DIRUNG20', '123456', 'FL Đi Rừng', 'Phamtuan236200@gmail.com', 'admin.png', 1, 1),
+                                                                                        ('NGUYENMAP20', '123456', 'FL Nguyên Mập', 'Phamtuan236200@gmail.com', 'admin.png', 1, 1),
+                                                                                        ('THACHDAU20', '123456', 'TDT Thách Đấu', 'Phamtuan236200@gmail.com', 'admin.png', 1, 1),
+                                                                                        ('HOANGTD20', '123456', 'TDT HoangTD', 'Phamtuan236200@gmail.com', 'admin.png', 1, 1),
+                                                                                        ('ONGBACH20', '123456', 'TDT Ông Bạch', 'Phamtuan236200@gmail.com', 'admin.png', 1, 1),
+                                                                                        ('MARIN20', '123456', 'TDT Marin', 'Phamtuan236200@gmail.com', 'admin.png', 1, 1),
+                                                                                        ('CATIA20', '123456', 'TDT Catia', 'Phamtuan236200@gmail.com', 'admin.png', 1, 1),
+                                                                                        ('USER01', '123456', 'Đinh Hoàng User', 'Phamtuan236200@gmail.com', 'user.png', 1, 0),
+                                                                                        ('USER02', '123456', 'SGP User', 'Phamtuan236200@gmail.com', 'user.png', 1, 0),
+                                                                                        ('USER03', '123456', 'Trịnh Võ User', 'Phamtuan236200@gmail.com', 'user.png', 1, 0),
+                                                                                        ('USER04', '123456', 'Nguyễn Hoàng User', 'Phamtuan236200@gmail.com', 'user.png', 1, 0),
+                                                                                        ('USER05', '123456', 'Nguyễn Hữu User', 'Phamtuan236200@gmail.com', 'user.png', 1, 0);
 
 -- Create Table Categories
 CREATE TABLE Categories (
@@ -49,14 +49,14 @@ CREATE TABLE Categories (
 
 -- Insert Data into Categories
 INSERT INTO Categories (CategoryId, Name) VALUES
-                                              ('00001', 'Quần Nam'),
-                                              ('00002', 'Quần Nữ'),
-                                              ('00003', 'Áo Nam'),
-                                              ('00004', 'Áo Nữ'),
-                                              ('00005', 'Đồng Hồ'),
-                                              ('00006', 'Nón Thời Trang'),
-                                              ('00007', 'Túi Xách'),
-                                              ('00008', 'Giày Dép');
+                                              ('00001', N'Đồng Hồ Thể Thao'),
+                                              ('00002', N'Đồng Hồ Cổ Điển'),
+                                              ('00003', N'Đồng Hồ Thông Minh'),
+                                              ('00004', N'Đồng Hồ Thời Trang'),
+                                              ('00005', N'Đồng Hồ Sang Trọng'),
+                                              ('00006', N'Đồng Hồ Lặn'),
+                                              ('00007', N'Đồng Hồ Quân Đội'),
+                                              ('00008', N'Đồng Hồ Phi Công');
 
 -- Create Table Products
 CREATE TABLE Products (
@@ -73,51 +73,59 @@ CREATE TABLE Products (
 
 -- Insert Data into Products
 INSERT INTO Products (Name, Image, Price, Quantity, CreateDate, Available, CategoryId) VALUES
-                                                                                           ('Quần shorts chạy bộ Ultra Fast & Free Run', '1.png', 280000, 10, '2021-11-15', 1, '00001'),
-                                                                                           ('Quần Jeans Clean Denim dáng Regular S2', '2.png', 360000, 10, '2021-11-16', 1, '00001'),
-                                                                                           ('Quần Jogger nam túi hộp Cargo Outdoor', '3.png', 330000, 10, '2021-11-17', 1, '00001'),
-                                                                                           ('Quần dài Kaki Excool co giãn', '4.png', 499999, 10, '2021-11-15', 1, '00001'),
-                                                                                           ('Quần short nam thể thao 5 New Ultra', '5.png', 99000, 10, '2021-11-16', 1, '00001'),
-                                                                                           ('Quần short nữ giả váy xinh xắn', '6.png', 255000, 10, '2021-10-20', 1, '00002'),
-                                                                                           ('Quần tây công sở nữ ĐAN CHÂU', '7.png', 280000, 10, '2021-10-21', 1, '00002'),
-                                                                                           ('Quần short jean thêu hoa sành điệu', '8.png', 140000, 10, '2021-10-20', 1, '00002'),
-                                                                                           ('Quần jeans nữ phối kéo ALE', '9.png', 539000, 10, '2021-10-21', 1, '00002'),
-                                                                                           ('Quần CULOTTES Can De Blanc', '10.png', 1290000, 10, '2021-10-20', 1, '00002'),
-                                                                                           ('Áo sơ mi dài tay Aristino ALS17403', '11.png', 895000, 5, '2021-09-13', 1, '00003'),
-                                                                                           ('Áo polo nam cổ ngắn tay Aristino APS046S3', '12.png', 595000, 5, '2021-09-13', 1, '00003'),
-                                                                                           ('Áo thun ngắn tay Aristino ATS010S3', '13.png', 395000, 5, '2021-09-13', 1, '00003'),
-                                                                                           ('Áo blazer nam Aristino ABZ00502', '14.png', 2900000, 5, '2021-08-15', 1, '00003'),
-                                                                                           ('Áo khoác 2 lớp Aristino AJK028W2', '15.png', 1950000, 5, '2021-08-15', 1, '00003'),
-                                                                                           ('Áo khoác dù nữ form rộng cá tính', '16.png', 159000, 6, '2021-07-13', 1, '00004'),
-                                                                                           ('Áo sơ mi nữ form rộng', '17.png', 159000, 7, '2021-07-13', 1, '00004'),
-                                                                                           ('Áo thun nữ tay lỡ form rộng', '18.png', 129000, 5, '2021-06-15', 1, '00004'),
-                                                                                           ('Áo kiểu nữ công sở tay dài', '19.png', 299000, 4, '2021-05-15', 1, '00004'),
-                                                                                           ('Áo thun croptop nữ tay lỡ', '20.png', 99000, 8, '2021-04-15', 1, '00004');
+    ( -- Đồng Hồ Thể Thao - 00001
+        (N'Casio G-Shock DW-5600E-1V', N'1.png', 1200000, 10, '2023-01-01', 1, '00001'),
+        (N'Suunto Core', N'2.png', 5000000, 5, '2023-01-02', 1, '00001'),
+        (N'Garmin Forerunner 945', N'3.png', 10000000, 4, '2023-01-03', 1, '00001'),
+        (N'Polar Vantage V2', N'4.png', 12000000, 3, '2023-01-04', 1, '00001'),
+        (N'Coros Pace 2', N'5.png', 5000000, 5, '2023-01-05', 1, '00001'),
+        -- Đồng Hồ Cổ Điển - 00002
+        (N'Orient Bambino Version IV', N'6.png', 5000000, 5, '2023-02-01', 1, '00002'),
+        (N'Seiko Presage SRPB41J1', N'7.png', 10000000, 2, '2023-02-02', 1, '00002'),
+        (N'Tissot Le Locle Powermatic 80', N'8.png', 15000000, 2, '2023-02-03', 1, '00002'),
+        (N'Longines Flagship', N'9.png', 20000000, 2, '2023-02-04', 1, '00002'),
+        (N'Frederique Constant Classics Index', N'10.png', 25000000, 2, '2023-02-05', 1, '00002'),
+        -- Đồng Hồ Thông Minh - 00003
+        (N'Apple Watch Series 8', N'11.png', 12000000, 10, '2023-03-01', 1, '00003'),
+        (N'Samsung Galaxy Watch 5', N'12.png', 9000000, 8, '2023-03-02', 1, '00003'),
+        (N'Garmin Venu 2', N'13.png', 10000000, 5, '2023-03-03', 1, '00003'),
+        (N'Fitbit Sense', N'14.png', 7000000, 5, '2023-03-04', 1, '00003'),
+        (N'Huawei Watch GT 3', N'15.png', 8000000, 5, '2023-03-05', 1, '00003'),
+        -- Đồng Hồ Thời Trang - 00004
+        (N'Michael Kors Access Gen 5', N'16.png', 10000000, 5, '2023-04-01', 1, '00004'),
+        (N'Fossil Gen 6', N'17.png', 9000000, 4, '2023-04-02', 1, '00004'),
+        (N'DKNY Soho', N'18.png', 5000000, 6, '2023-04-03', 1, '00004'),
+        (N'Armani Exchange AX2164', N'19.png', 6000000, 5, '2023-04-04', 1, '00004'),
+        (N'Hugo Boss HB1513677', N'20.png', 7000000, 5, '2023-04-05', 1, '00004'),
+        -- Đồng Hồ Sang Trọng - 00005
+        (N'Rolex Submariner', N'21.png', 200000000, 2, '2023-05-01', 1, '00005'),
+        (N'Omega Seamaster', N'22.png', 150000000, 2, '2023-05-02', 1, '00005'),
+        (N'Audemars Piguet Royal Oak', N'23.png', 300000000, 1, '2023-05-03', 1, '00005'),
+        (N'Patek Philippe Nautilus', N'24.png', 700000000, 1, '2023-05-04', 1, '00005'),
+        (N'Breitling Navitimer', N'25.png', 250000000, 1, '2023-05-05', 1, '00005'),
+        -- Đồng Hồ Lặn - 00006
+        (N'Citizen Promaster Diver', N'26.png', 10000000, 5, '2023-06-01', 1, '00006'),
+        (N'Seiko Prospex SRP777', N'27.png', 15000000, 3, '2023-06-02', 1, '00006'),
+        (N'Omega Seamaster Diver 300M', N'28.png', 200000000, 2, '2023-06-03', 1, '00006'),
+        (N'Rolex Sea-Dweller', N'29.png', 350000000, 1, '2023-06-04', 1, '00006'),
+        (N'Panerai Luminor Submersible', N'30.png', 300000000, 1, '2023-06-05', 1, '00006'),
+        -- Đồng Hồ Quân Đội - 00007
+        (N'Hamilton Khaki Field', N'31.png', 20000000, 5, '2023-07-01', 1, '00007'),
+        (N'Sinn 556A', N'32.png', 30000000, 3, '2023-07-02', 1, '00007'),
+        (N'Luminox Recon NAV SPC', N'33.png', 50000000, 2, '2023-07-03', 1, '00007'),
+        (N'Casio Pro Trek PRW-6600Y-1', N'34.png', 7000000, 5, '2023-07-04', 1, '00007'),
+        (N'Marathon GSAR', N'35.png', 25000000, 2, '2023-07-05', 1, '00007'),
+        -- Đồng Hồ Phi Công - 00008
+        (N'IWC Pilots Watch Mark XVIII', N'36.png', 40000000, 2, '2023-08-01', 1, '00008'),
+        (N'Breitling Aviator 8', N'37.png', 60000000, 1, '2023-08-02', 1, '00008'),
+        (N'Bell & Ross BR 03-92', N'38.png', 50000000, 2, '2023-08-03', 1, '00008'),
+        (N'Seiko Flightmaster SNA411', N'39.png', 15000000, 5, '2023-08-04', 1, '00008'),
+        (N'Tudor Black Bay P01', N'40.png', 70000000, 2, '2023-08-05', 1, '00008');
 
--- Create Table Favorites
-CREATE TABLE Favorites (
-                           FavoriteId INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
-                           Username VARCHAR(20) NOT NULL,
-                           ProductId INT NOT NULL,
-                           LikeDate DATE NOT NULL,
-                           FOREIGN KEY (Username) REFERENCES Accounts(Username) ON DELETE CASCADE,
-                           FOREIGN KEY (ProductId) REFERENCES Products(ProductId) ON DELETE CASCADE
-);
 
--- Insert Data into Favorites
-INSERT INTO Favorites (Username, ProductId, LikeDate) VALUES
-                                                          ('TRINHTAI25', 1, '2021-10-10'),
-                                                          ('TRINHTAI25', 2, '2021-10-10'),
-                                                          ('HONGQUYEN30', 2, '2021-10-10'),
-                                                          ('HONGQUYEN30', 3, '2021-10-10'),
-                                                          ('QUOCHUY19', 3, '2021-10-10'),
-                                                          ('QUOCHUY19', 4, '2021-10-10'),
-                                                          ('TRUNGNGUYEN20', 4, '2021-10-10'),
-                                                          ('TRUNGNGUYEN20', 5, '2021-10-10'),
-                                                          ('MINHTRI20', 5, '2021-10-10'),
-                                                          ('MINHTRI20', 6, '2021-10-10');
 
--- Create Table Orders
+
+
 CREATE TABLE Orders (
                         OrderId INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
                         Username VARCHAR(20) NOT NULL,

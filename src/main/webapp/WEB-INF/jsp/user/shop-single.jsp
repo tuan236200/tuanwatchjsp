@@ -90,7 +90,7 @@
                                     <h6>Brand - Thương hiệu:</h6>
                                 </li>
                                 <li class="list-inline-item">
-                                    <p class="text-muted"><strong>Easy Wear</strong></p>
+                                    <p class="text-muted"><strong>TUẤN WACHTES 666</strong></p>
                                 </li>
                             </ul>
 
@@ -107,9 +107,8 @@
 
                             <h6>Specification - Chi tiết:</h6>
                             <ul class="list-unstyled pb-3">
-                                <li>Chất lượng cao</li>
+                                <li>Đồng hồ Chất lượng cao</li>
                                 <li>Giá thành phải chăng</li>
-                                <li>Dễ phối đồ</li>
                                 <li>Thể hiện được cá tính của bạn</li>
                                 <li>Sản phẩm lỗi sẽ được hoàn trả</li>
                                 <li>Cam kết chất lượng</li>
@@ -120,15 +119,7 @@
                                 <input type="hidden" name="product-title" value="Activewear">
                                 <div class="row">
                                     <div class="col-auto">
-                                        <ul class="list-inline pb-3">
-                                            <li class="list-inline-item">Size :
-                                                <input type="hidden" name="product-size" id="product-size" value="S">
-                                            </li>
-                                            <li class="list-inline-item"><span class="btn btn-success btn-size" id="s" onclick="doimauS()">S</span></li>
-                                            <li class="list-inline-item"><span class="btn btn-success btn-size" id="m" onclick="doimauM()">M</span></li>
-                                            <li class="list-inline-item"><span class="btn btn-success btn-size" id="l" onclick="doimauL()">L</span></li>
-                                            <li class="list-inline-item"><span class="btn btn-success btn-size" id="xl" onclick="doimauXL()">XL</span></li>
-                                        </ul>
+
                                     </div>
                                     <div class="col-auto">
                                         <ul class="list-inline pb-3">
