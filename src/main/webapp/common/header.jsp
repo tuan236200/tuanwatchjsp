@@ -8,7 +8,7 @@
             <div class="w-100 d-flex justify-content-between">
                 <div>
                     <a class="navbar-sm-brand text-light fw-bold text-decoration-none btn" href="mailto:ITITIU20345@student.hcm.edu.vn"><i class="fa fa-envelope mx-2"></i> ITITIU20345@student.hcm.edu.vn</a>
-                    <a class="navbar-sm-brand text-light fw-bold text-decoration-none btn" href="tel:ITITIU20345@student.hcm.edu.vn"><i class="fa fa-phone mx-2"></i> 0348 720 610</a>
+                    <a class="navbar-sm-brand text-light fw-bold text-decoration-none btn" href="tel:ITITIU20345@student.hcm.edu.vn"><i class="fa fa-phone mx-2"></i> 0896 373 554</a>
                 </div>
                 <c:if test="${accountLogin == null}"> <!-- lấy seesion từ /login --> <!-- Nếu chưa đăng nhập -->
 					<div>

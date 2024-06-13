@@ -7,7 +7,7 @@
             <div class="row">
 
                 <div class="col-md-4 pt-5">
-                    <h2 class="fw-bold text-success border-bottom pb-3 border-light logo">tuan dep trai </h2>
+                    <h2 class="fw-bold text-success border-bottom pb-3 border-light logo">TUAN Store </h2>
                     <ul class="list-unstyled text-light footer-link-list">
                         <li>
                             <i class="fas fa-map-marker-alt fa-fw"></i>
@@ -15,7 +15,7 @@
                         </li>
                         <li>
                             <i class="fa fa-phone fa-fw"></i>
-                            <a class="text-decoration-none" href="tel:0348720610">0348 720 610</a>
+                            <a class="text-decoration-none" href="tel:0348720610">089 637 3554</a>
                         </li>
                         <li>
                             <i class="fa fa-envelope fa-fw"></i>
@@ -66,7 +66,7 @@
                             <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
                         </li>
                         <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                            <a class="text-light text-decoration-none" target="_blank" href=""><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
                         </li>
                     </ul>
                 </div>

@@ -3,6 +3,8 @@ package com.ps20669.model;
 import java.io.Serializable;
 
 
+import java.time.LocalDate;
+import java.time.ZoneId;
 import java.util.Date;
 import java.util.List;
 
@@ -32,17 +34,25 @@ public class Order implements Serializable{
 	Long id;
 	String phonenumber;
 	String address;
-	
+
 	@Temporal(TemporalType.DATE)
-	@Column(name = "createdate")
-	Date createDate = new Date();
-	
+	@Column(name = "createdate", nullable = false)
+	Date createDate;
+
 	@ToString.Exclude
 	@ManyToOne @JoinColumn(name = "username")
 	Account account;
-	
+
 	@OneToMany(mappedBy = "order")
 	List<OrderDetail> orderDetails;
-	
-	
+
+	// Default constructor
+	public Order() {
+		this.createDate = new Date();
+	}
+
+	// Method to set order date
+	public void setOrderDate(LocalDate orderDate) {
+		this.createDate = Date.from(orderDate.atStartOfDay(ZoneId.systemDefault()).toInstant());
+	}
 }

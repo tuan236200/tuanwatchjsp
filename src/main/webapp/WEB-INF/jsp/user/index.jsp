@@ -11,13 +11,7 @@
     
     <!-- Nhúng các CSS, icon (library) -->
 	<%@ include file="/common/library.jsp" %>
-<!--
-    
-TemplateMo 559 Zay Shop
 
-https://templatemo.com/tm-559-zay-shop
-
--->
 </head>
 
 <body>
@@ -40,7 +34,7 @@ https://templatemo.com/tm-559-zay-shop
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left align-self-center">
                                 <h1 class="h1 text-success"><b>TUAN</b>STORE</h1>
-                                <h3 class="h2">Tiny and Perfect eCommerce Template</h3>
+                                <h3 class="h2">Luxury and Perfect Watches</h3>
                                 <p>
                                     <a href="https://github.com/tuan236200" class="text-success" target="_blank">tuan store</a> is a reputable sales website with beautiful watch
                                 </p>
@@ -75,10 +69,10 @@ https://templatemo.com/tm-559-zay-shop
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
-                                <h1 class="h1">Repr in voluptate</h1>
-                                <h3 class="h2">Ullamco laboris nisi ut </h3>
+                                <h1 class="h1">Beautiful and Luxury</h1>
+                                <h3 class="h2">Good Wacthes For Life </h3>
                                 <p>
-                                   This free CSS template comes from Zay eCommerce !
+                                   This free CSS template comes from bootstrap !
                                 </p>
                             </div>
                         </div>
@@ -102,8 +96,7 @@ https://templatemo.com/tm-559-zay-shop
             <div class="col-lg-6 m-auto">
                 <h1 class="h1">Categories of The Month</h1>
                 <p>
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
+                    Good Products Of Watches This Month For Ya!
                 </p>
             </div>
         </div>
@@ -135,8 +128,7 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="col-lg-6 m-auto">
                     <h1 class="h1">Featured Product</h1>
                     <p>
-                        Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident.
+                       You Should Come And Visit Featured Product
                     </p>
                 </div>
             </div>

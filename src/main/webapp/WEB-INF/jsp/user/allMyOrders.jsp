@@ -1,64 +1,57 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/common/taglib.jsp" %>
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>All My Orders</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<!-- Nhúng các CSS, icon (library) -->
+	<title>All Orders</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<%@ include file="/common/library.jsp" %>
 </head>
 
 <body>
-    <%@ include file="/common/header.jsp" %> <!-- Nhúng header -->
+<%@ include file="/common/header.jsp" %>
 
-	<!-- Start Title -->
-    <div class="container-fluid bg-light py-4">
-        <div class="col-6 m-auto text-center">
-            <h1 class="fw-bold">All My Orders</h1>
-            <p>Tất Cả Hóa Đơn !</p>
-        </div>
-    </div>
-	<!-- Close Title -->
-	
-	<!-- Start OrderDetail Page -->
-	<div class="m-auto container col-8 mt-5 mb-5">
+<div class="container-fluid bg-light py-4">
+	<div class="col-6 m-auto text-center">
+		<h1 class="fw-bold">All Orders</h1>
+		<p>Tất Cả Đơn Hàng</p>
+	</div>
+</div>
+
+<div class="m-auto container col-8 mt-5 mb-5">
 	<table class="table table-hover border shadow mt-3">
 		<thead>
-			<tr>
-				<th>NO.</th>
-				<th>ORDER ID</th>
-				<th>CREATE DATE</th>
-				<th>PHONE NUMBER</th>
-				<th>ADDRESS</th>
-				<th>ORDER DETAILS</th>
-			</tr>
+		<tr>
+			<th>NO.</th>
+			<th>Order Date</th>
+			<th>Order ID</th>
+			<th>Phone Number</th>
+			<th>Address</th>
+			<th>Order Details</th>
+		</tr>
 		</thead>
 		<tbody>
-			<c:set var="stt" value="0" />
-			<c:forEach var="item" items="${orders}">
+		<c:set var="stt" value="0" />
+		<c:forEach var="order" items="${orders}">
 			<tr class="align-middle">
-				<td>${stt = stt + 1}</td>
-				<td>${item.id}</td>
-				<td>${item.createDate}</td>
-				<td>${item.phonenumber}</td>
-				<td>${item.address}</td>
-				<td><a href="/home/myOrderdetail?orderID=${item.id}" class="btn btn-outline-success"><i class="far fa-eye"></i> View Details</a></td>
+				<td class="text-center">${stt = stt + 1}</td>
+				<td>${order.orderDate}</td>
+				<td>${order.id}</td>
+				<td>${order.phonenumber}</td>
+				<td>${order.address}</td>
+				<td class="text-center">
+					<a href="/home/myOrderDetail?orderID=${order.id}" class="btn btn-primary btn-sm">Chi Tiết Đơn Hàng</a>
+				</td>
 			</tr>
-			</c:forEach>
+		</c:forEach>
 		</tbody>
 	</table>
-	</div>
-	<!-- Close OrderDetail Page -->
+</div>
 
-
-    <%@ include file="/common/footer.jsp" %> <!-- Nhúng footer -->
-	
-	<%@ include file="/common/script.jsp" %> <!-- Nhúng JS -->
+<%@ include file="/common/footer.jsp" %>
+<%@ include file="/common/script.jsp" %>
 </body>
 
 </html>

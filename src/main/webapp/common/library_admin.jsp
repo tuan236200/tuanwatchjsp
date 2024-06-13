@@ -1,8 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!-- Chứa Các CSS Nhúng + Icon Web -->
-<link rel="apple-touch-icon" href="/images/apple-icon.png">
-<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
 

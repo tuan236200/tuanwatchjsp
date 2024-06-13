@@ -29,7 +29,7 @@
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <img src="/images/about-hero.svg" alt="About Hero">
+                    <img src="/images/Products/about.png" alt="About Hero">
                 </div>
             </div>
         </div>

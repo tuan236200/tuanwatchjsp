@@ -1,8 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!-- Chứa Các CSS Nhúng + Icon Web -->
-<link rel="apple-touch-icon" href="/images/apple-icon.png">
-<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+
 
 <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
 <link rel="stylesheet" href="/assets/css/templatemo.css">
