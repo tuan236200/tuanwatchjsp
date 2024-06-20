@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test1</title>
+    <style>
+        #chart {
+            font: 10px sans-serif;
+        }
+
+        .line {
+            fill: none;
+            stroke-width: 1.5px;
+        }
+
+        .axis path,
+        .axis line {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+        }
+
+        .dot {
+            fill: steelblue;
+            stroke: white;
+            stroke-width: 1.5px;
+        }
+
+        .country-text {
+            font-size: 12px;
+        }
+
+        .legend-rect {
+            width: 18px;
+            height: 18px;
+        }
+    </style>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div id="chart"></div>
+    <script>
+        const csvUrl = 'https://raw.githubusercontent.com/ITITIU20153/DSDC-project/main/Data/migration_population.csv';
+
+        // Countries to display
+        const countriesToShow = ['Japan', 'United States', 'China', 'Germany', 'Vietnam'];
+
+        // Set dimensions and margins for the chart
+        const margin = { top: 40, right: 40, bottom: 50, left: 40 }; // Increase top margin for title
+        const width = 1300 - margin.left - margin.right;
+        const height = 500 - margin.top - margin.bottom;
+
+        // Append SVG element to the div
+        const svg = d3.select("#chart")
+            .append("svg")
+            .attr("width", width + margin.left + margin.right + 50)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", `translate(${margin.left},${margin.top})`);
+
+        // Add title
+        svg.append("text")
+            .attr("x", width / 2)
+            .attr("y", -margin.top / 2)
+            .attr("text-anchor", "middle")
+            .style("font-size", "20px")
+            .text("Population density Japan, US, Germany, Vietnam 1960-2020");
+
+        // Fetch and parse CSV data
+        d3.csv(csvUrl).then(data => {
+            // Filter data for selected countries and years 1950 to 2020
+            const filteredData = data.filter(d => countriesToShow.includes(d.country) && +d.year >= 1960 && +d.year <= 2020 && +d.year % 5 === 0);
+
+            // Parse the data
+            filteredData.forEach(d => {
+                d.year = +d.year; // Convert year to number
+                d.pop_density = +d.pop_density; // Convert pop_density to number
+            });
+
+            // Define scales
+            const x = d3.scaleLinear()
+                .domain(d3.extent(filteredData, d => d.year))
+                .nice()
+                .range([0, width]);
+
+            const y = d3.scaleLinear()
+                .domain([0, d3.max(filteredData, d => d.pop_density)])
+                .nice()
+                .range([height, 0]);
+
+            // Add X axis
+            svg.append("g")
+                .attr("transform", `translate(0,${height})`)
+                .call(d3.axisBottom(x).tickFormat(d3.format("d")));
+
+            // Add Y axis with density label
+            svg.append("g")
+                .call(d3.axisLeft(y))
+                .append("text")
+                .attr("class", "axis-label")
+                .attr("transform", "rotate(-90)")
+                .attr("y", -margin.left + 10)
+                .attr("x", -height / 2)
+                .attr("dy", "1em")
+                .style("text-anchor", "middle")
+                .text("Density");
+
+            // Define the line generator
+            const line = d3.line()
+                .x(d => x(d.year))
+                .y(d => y(d.pop_density));
+
+            // Add the lines to the chart
+            svg.selectAll(".line")
+                .data(countriesToShow.map(country => ({
+                    country: country,
+                    data: filteredData.filter(d => d.country === country)
+                })))
+                .enter().append("path")
+                .attr("class", "line")
+                .attr("d", d => line(d.data))
+                .style("stroke", d => {
+                    // Assign different colors to each line based on country
+                    switch (d.country) {
+                        case 'Japan': return 'blue';
+                        case 'United States': return 'red';
+                        case 'China': return 'green';
+                        case 'Germany': return 'purple';
+                        case 'Vietnam': return 'orange';
+                        default: return 'gray';
+                    }
+                });
+
+            // Add points (dots) for each data point
+            svg.selectAll(".dot")
+                .data(filteredData)
+                .enter().append("circle")
+                .attr("class", "dot")
+                .attr("cx", d => x(d.year))
+                .attr("cy", d => y(d.pop_density))
+                .attr("r", 3)
+                .style("fill", d => {
+                    // Assign different colors to dots based on country
+                    switch (d.country) {
+                        case 'Japan': return 'blue';
+                        case 'United States': return 'red';
+                        case 'China': return 'green';
+                        case 'Germany': return 'purple';
+                        case 'Vietnam': return 'orange';
+                        default: return 'gray';
+                    }
+                });
+
+            // Add legend rectangles and labels for each country
+            const legend = svg.selectAll(".legend")
+                .data(countriesToShow)
+                .enter().append("g")
+                .attr("class", "legend")
+                .attr("transform", (d, i) => `translate(0, ${i * 20})`);
+
+            legend.append("rect")
+                .attr("class", "legend-rect")
+                .attr("x", width + 11)
+                .attr("width", 18)
+                .attr("height", 18)
+                .style("fill", d => {
+                    switch (d) {
+                        case 'Japan': return 'blue';
+                        case 'United States': return 'red';
+                        case 'China': return 'green';
+                        case 'Germany': return 'purple';
+                        case 'Vietnam': return 'orange';
+                        default: return 'gray';
+                    }
+                });
+
+            legend.append("text")
+                .attr("x", width + 35)
+                .attr("y", 9)
+                .attr("dy", ".35em")
+                .style("text-anchor", "start")
+                .text(d => d);
+
+        }).catch(error => {
+            console.error('Error fetching or parsing data:', error);
+        });
+    </script>
+</body>
+</html>
